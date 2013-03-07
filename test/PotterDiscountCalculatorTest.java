@@ -34,6 +34,14 @@ public class PotterDiscountCalculatorTest {
 	}
 
 	@Test
+	public void testNullCalculation() {
+		PotterDiscountCalculator calc = new PotterDiscountCalculator();
+		calc.calculateDiscounts(null);
+
+		
+	}
+	
+	@Test
 	public void testEmptyBasket() {
 		PotterDiscountCalculator calc = new PotterDiscountCalculator();
 		List<Integer> order = new ArrayList<Integer>();
